@@ -31,7 +31,8 @@ border-radius:10px;
 
 .item p {
 display: inline-block;
-font-size: 18px;
+font-size: 18px
+text-align: center;
 }
 
 .breed, .treat {
