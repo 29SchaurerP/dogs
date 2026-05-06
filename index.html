@@ -1,60 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="Dogs.css" rel="stylesheet" />
-<title> Dog Haven</title>
+    <meta charset="UTF-8">
+    <title>All About Dogs</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
-<body> 
-<h1 class="established">Est. 2026</h1>
+    <header>
+        <h1>All About Dogs</h1>
+        <p><strong>Dogs</strong> are loyal, loving companions that come in many <u>breeds, sizes, and personalities</u>.</p>
+    </header>
 
-<main>
-<section>
-<h2>Dog Breeds</h2>
+        <ul>
+            <li><a href="#breeds">Popular Breeds</a></li>
+            <li><a href="#care">Dog Care Tips</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#links">Helpful Links</a></li>
+            <li><a href="#survey">Favorite Dog Survey</a></li>
+        </ul>
 
-<article class="item">
-<p class="breed">Golden Retriever</p><p class="info">Friendly & loyal</p>
-</article>
+    <main>
+        <section id="breeds">
+            <h2>Popular Dog Breeds</h2>
+            <p>Here are some <strong>well-known dog breeds</strong> and what they are known for:</p>
 
-<article class="item">
-<p class="breed">German Shepherd</p><p class="info">Smart & protective</p>
-</article>
+            <h3>Working and Sporting Breeds</h3>
+            <ul>
+                <li><strong>Labrador Retriever</strong> – Friendly, energetic, and great family dogs.</li>
+                <li><strong>German Shepherd</strong> – Intelligent and often used as service or police dogs.</li>
+                <li><strong>Golden Retriever</strong> – Gentle, loyal, and very trainable.</li>
+            </ul>
 
-<article class="item">
-<p class="breed">Beagle</p><p class="info">Curious & energetic</p>
-</article>
+            <h3>Small Companion Breeds</h3>
+            <ol>
+                <li><strong>Pug</strong> – Playful and affectionate with a funny personality.</li>
+                <li><strong>Beagle</strong> – Curious, active, and great with kids.</li>
+                <li><strong>Yorkshire Terrier</strong> – Small, bold, and full of energy.</li>
+            </ol>
+        </section>
 
-<article class="item">
-<p class="breed">Poodle</p><p class="info">Intelligent & active</p>
-</article>
-</section>
+        <section id="care">
+            <h2>Basic Dog Care Tips</h2>
+            <p>To keep a dog healthy and happy, owners should focus on these key areas:</p>
+            <ul>
+                <li><strong>Nutrition:</strong> Provide high-quality dog food and fresh water.</li>
+                <li><strong>Exercise:</strong> Daily walks and playtime to burn energy.</li>
+                <li><strong>Grooming:</strong> Regular brushing, nail trimming, and baths.</li>
+                <li><strong>Veterinary Care:</strong> Yearly checkups and vaccinations.</li>
+                <li><strong>Training:</strong> Positive reinforcement and clear rules.</li>
+            </ul>
+        </section>
+      
+        <section id="gallery">
+            <h2>Dog Photo Gallery</h2>
+            <p>Enjoy these pictures of different kinds of dogs.</p>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/250x170?text=Labrador" alt="Labrador Retriever">
+                <img src="https://via.placeholder.com/250x170?text=German+Shepherd" alt="German Shepherd">
+                <img src="https://via.placeholder.com/250x170?text=Golden+Retriever" alt="Golden Retriever">
+                <img src="https://via.placeholder.com/250x170?text=Pug" alt="Pug">
+                <img src="https://via.placeholder.com/250x170?text=Beagle" alt="Beagle">
+            </div>
+        </section>
 
-<section>
-<h2> Dog Treats</h2>
+        <section id="links">
+            <h2>Helpful Dog Resources</h2>
+            <p>Click the links below to learn more about dogs (each opens in a new tab):</p>
+            <ul>
+                <li><a href="https://www.akc.org/dog-breeds/" target="_blank">AKC Dog Breeds</a></li>
+                <li><a href="https://www.aspca.org/pet-care/dog-care" target="_blank">ASPCA Dog Care</a></li>
+                <li><a href="https://www.humanesociety.org/resources/dog-care" target="_blank">Humane Society Dog Care</a></li>
+                <li><a href="https://www.cesarsway.com/dog-care/" target="_blank">Cesar’s Way Dog Tips</a></li>
+                <li><a href="https://www.petfinder.com/dog-breeds/" target="_blank">Petfinder Dog Breeds</a></li>
+            </ul>
+        </section>
 
-<article class="item>
-<p class="treat">Peanut Butter Biscuit</p><p class="info">44 cal.</p>
-</article>
+        <section id="survey">
+            <h2>Favorite Dog Survey</h2>
+            <p><strong>Tell us about your favorite type of dog!</strong></p>
 
-<article class="item">
-<p class="treat">Chicken Chew</p><p class="info">144 cal.</p>
-</article>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>What size dog do you prefer?</legend>
+                    <label>
+                        <input type="radio" name="size" value="small">
+                        Small
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="medium">
+                        Medium
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="large">
+                        Large
+                    </label>
+                </fieldset>
 
-<article class="item">
-<p class="treat">Pumpkin Cookie</p><p class="info">14 cal.</p>
-</article>
+                <fieldset>
+                    <legend>What activities do you enjoy with dogs? (Check all that apply)</legend>
+                    <label>
+                        <input type="checkbox" name="activity" value="walking">
+                        Walking
+                    </label>
+                    <label>
+                        <input type="checkbox" name="activity" value="playing">
+                        Playing fetch
+                    </label>
+                    <label>
+                        <input type="checkbox" name="activity" value="training">
+                        Training tricks
+                    </label>
+                    <label>
+                        <input type="checkbox" name="activity" value="cuddling">
+                        Cuddling
+                    </label>
+                </fieldset>
 
-<article class="item">
-<p class="treat">Beef Jerky Strip</p><p class="info">43 cal.</p>
-</article>
-</section>
-</main>
+                <label for="comments"><strong>Why do you love dogs?</strong></label><br>
+                <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write your answer here..."></textarea>
 
-  <footer>
-<a href="https://www.dogster.com/" target="_blank">Learn About Pet Care</a>
-<p class="address">183 Dog Haven Lane</p>
-</footer>
+                <br><br>
+                <button type="submit">Submit Survey</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 All About Dogs | Student Web Design Project</p>
+    </footer>
+
 </body>
 </html>
