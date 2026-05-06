@@ -2,22 +2,31 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: url("https://via.placeholder.com/1200x800?text=Dog+Background") no-repeat center fixed;
+
+    background: url("https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1600&q=80")
+                no-repeat center fixed;
     background-size: cover;
+
     color: #222;
 }
 
-header, main, footer {
-    background-color: rgba(255, 255, 255, 0.9);
+header, nav, main, footer {
+    background-color: rgba(255, 255, 255, 0.88);
     margin: 10px auto;
     max-width: 1000px;
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
 header h1 {
     text-align: center;
-    color: #2b5d8a;
+
+    background: linear-gradient(to right, #2b5d8a, #4fa3d1);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
 }
 
 ul {
@@ -28,26 +37,24 @@ ul {
 
 li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 12px;
 }
 
 a {
     text-decoration: none;
     font-weight: bold;
     color: #2b5d8a;
+    font-size: 1.1rem;
 }
 
 a:hover {
+    color: #4fa3d1;
     text-decoration: underline;
-}
-
-section {
-    margin-bottom: 20px;
 }
 
 h2 {
     color: #2b5d8a;
-    border-bottom: 2px solid #2b5d8a;
+    border-bottom: 3px solid #4fa3d1;
     padding-bottom: 5px;
 }
 
@@ -58,13 +65,21 @@ ul, ol {
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     justify-content: center;
 }
 
 .gallery img {
-    border-radius: 6px;
-    border: 2px solid #2b5d8a;
+    border-radius: 10px;
+    border: 3px solid #2b5d8a;
+    width: 250px;
+    height: 170px;
+    object-fit: cover;
+
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
 }
 
 form {
@@ -72,13 +87,15 @@ form {
 }
 
 fieldset {
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+    border: 2px solid #4fa3d1;
+    margin-bottom: 12px;
     padding: 10px;
+    border-radius: 8px;
 }
 
 legend {
     font-weight: bold;
+    color: #2b5d8a;
 }
 
 label {
@@ -89,16 +106,21 @@ label {
 textarea {
     width: 100%;
     max-width: 100%;
+    border: 2px solid #4fa3d1;
+    border-radius: 6px;
 }
 
 button {
     background-color: #2b5d8a;
     color: white;
     border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
+    padding: 10px 18px;
+    border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 1rem;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
 
 button:hover {
@@ -108,4 +130,5 @@ button:hover {
 footer {
     text-align: center;
     font-size: 0.9em;
+    color: #2b5d8a;
 }
